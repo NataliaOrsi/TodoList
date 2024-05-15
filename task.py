@@ -1,4 +1,3 @@
-# TODO: look about python type hinting, mark every method with args/returns with the correct hints
 from pathlib import Path
 from rich import print
 
@@ -7,7 +6,11 @@ class Task:
     """Creates a class for the tasks manipulation on the TO DO list"""
 
     def __init__(self, cache_path: Path):
+        # TODO: read about protected member variables, and rename the members with _ prefix
+        # Read: https://realpython.com/python-classes/#public-vs-non-public-members
         self.cache_path = cache_path
+        # TODO: make read-only property for tasks
+        # Read: https://realpython.com/python-property/#using-property-as-a-decorator
         self.tasks = []
 
         self.load_tasks()
