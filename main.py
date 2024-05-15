@@ -4,12 +4,6 @@ from rich import print
 
 from task import Task
 
-# TODO: read about python code layouts
-# Read: https://realpython.com/python-application-layouts/#command-line-application-layouts
-
-# TODO: read about python code quality and tools
-# Read: https://realpython.com/python-code-quality/
-
 @enum.unique
 class MenuAction(enum.Enum):
     ACTION_ADD_TASK = 1
